@@ -1,0 +1,1152 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5</title>
+		<meta name="description" content="HTML5 vs HTML/HTML 4.01/XHTML Presentation">
+		<meta name="author" content="Andrii Mokhovyk">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/epam.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<!--
+		PRIMARY COLORS
+		SHARP BLUE: #39C2D7
+		LIME GREEN: #A3C644
+		GRAPHITE: #464547
+		WHITE: #ffffff
+
+		SECONDARY COLORS
+		RASPBERRY: #B22746
+		-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- SLIDES -->
+			<div class="slides">
+
+				<!-- SECTION 0 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>HTML5</h1>
+					<p>
+						<small>Created by <a href="http://mokhovyk.com">Heorhii Kuzmenko</a></small>
+					</p>
+					<img width="288" height="108" class="plain" style="margin-bottom:-118px;" data-src="img/epam_logo_white.png" alt="EPAM">
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ol>
+						<li class="fragment grow">Intro. History of HTML</li>
+						<li class="fragment grow">HTML4</li>
+						<li class="fragment grow">XHTML</li>
+						<li class="fragment grow">Doctype</li>
+						<li class="fragment grow">Industry evolution</li>
+						<li class="fragment grow">HTML5 and its benefits</li>
+						<li class="fragment grow">HTML5 today</li>
+						<li class="fragment grow">What's next?</li>
+
+					</ol>
+				</section>
+				<!-- /SECTION 0 -->
+
+				<!-- SECTION 1 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>History of HTML</h1>
+				</section>
+
+				<section>
+					<h2>Why should we study the history?</h2>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## What is HTML?
+
+						HyperText Markup Language is the standard markup language used to create web pages.
+
+						```
+						<!DOCTYPE html>
+						<html>
+						<head>
+							<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+							<title>HTML Document</title>
+						</head>
+						<body>
+							<p>
+								<b>
+									It is bold text,
+									<i>it is also italic text</i>
+								</b>
+							</p>
+						</body>
+						</html>
+						```
+					</script>
+				</section>
+
+				<section>
+					<h5>Developed in 1986—1991 by Tim Berners-Lee</h5>
+				</section>
+
+				<section>
+					<h3>HTML 1.0 specification does not exist</h3>
+					<p>Until 1995, there were many informal standards for HTML.
+						In order to create the standard version different from them, it was immediately assigned the second number
+					</p>
+				</section>
+
+				<section>
+					<h1>Timeline</h1>
+				</section>
+
+				<section>
+					<div class="timeline">
+						<div class="timeline__row">
+							<div class="timeline__cell" data-title="1995">
+								<div class="timeline__drop fragment" style="top:150px;">
+									<h5>24.11.1995</h5>
+									<p><b class="label-sec">HTML 2.0</b> was published as IETF RFC 1866</p>
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="1997">
+								<div class="timeline__drop fragment" style="left:-9px;z-index:2;">
+									<h5>14.01.1997</h5>
+									<p><b class="label-sec">HTML 3.2</b> was published as a W3C Recom.</p>
+								</div>
+								<div class="timeline__drop fragment" style="left:85%;top:300px;">
+									<h5>18.12.1997</h5>
+									<p><b class="label-sec">HTML 4.0</b>&nbsp;was published as a W3C Recom.</p>
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="1999">
+								<div class="timeline__drop fragment">
+									<h5>24.12.1999</h5>
+									<p><b class="label-sec">HTML 4.01</b> was published as a W3C Recom.</p>
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="2000" style="width:32%;">
+								<div class="timeline__drop fragment" style="top:150px;">
+									<h5>15.05.2000</h5>
+									<p><b class="label-sec">ISO HTML</b>, based on HTML 4.01 Strict was published as an ISO/IEC international standard</p>
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="2015">
+								<div class="timeline__drop fragment" style="left:3px;">
+									<h5>28.10.2014</h5>
+									<p><b class="label-sec">HTML5</b> was published as a W3C Recom.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<!-- /SECTION 1 -->
+
+				<!-- SECTION 2 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>HTML4 <br><small>implementation and improvements</small></h1>
+				</section>
+
+				<section>
+					<h1>HTML 4</h1>
+					<p>The biggest clean standard.<br> Many elements have been marked as obsolete and deprecated.</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Deprecated Tags in HTML 4.0
+						```
+						<ISINDEX>...</ISINDEX>
+						<APPLET>...</APPLET>
+						<CENTER>...</CENTER>
+						<FONT>...</FONT>
+						<BASEFONT>...</BASEFONT>
+						<STRIKE>...</STRIKE>
+						<S>...</S>
+						<U>...</U>
+						<DIR>...</DIR>
+						<MENU>...</MENU>
+						```
+					</script>
+				</section>
+
+				<section>
+					<section>
+						<h3>Deprecated and obsolete attributes in HTML 4.0</h3>
+					</section>
+					<section>
+						<ul>
+							<li><b class="label">background</b> and <b class="label">bgcolor</b> (deprecated. use CSS instead.) attributes for <b class="label-sec">body</b></li>
+							<li><b class="label">align</b> (deprecated. use CSS instead.) attribute on <b class="label-sec">div</b>, <b class="label-sec">form</b>, <b class="label-sec">p</b> and <b class="label-sec">h1...h6</b> elements</li>
+							<li><b class="label">align</b>, <b class="label">noshade</b>, <b class="label">size</b>  and <b class="label">width</b> (deprecated. use CSS instead.) attributes on <b class="label-sec">hr</b> element</li>
+							<li><b class="label">align</b>, <b class="label">border</b>, <b class="label">vspace</b> and <b class="label">hspace</b> (deprecated. use CSS instead.) attributes on <b class="label-sec">img</b> element</li>
+							<li><b class="label">align</b> (deprecated. use CSS instead.) attribute on <b class="label-sec">legend</b> and <b class="label-sec">caption</b> elements</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li><b class="label">align</b> (deprecated. use CSS instead.) and <b class="label">bgcolor</b> (deprecated. use CSS instead.) on <b class="label-sec">table element</b></li>
+							<li><b class="label">nowrap</b> (obsolete), <b class="label">bgcolor</b> (deprecated. use CSS instead.), <b class="label">width</b>, <b class="label">height</b> on <b class="label-sec">td</b> and <b class="label-sec">th</b> elements</li>
+							<li><b class="label">bgcolor</b> (deprecated. use CSS instead.) attribute on <b class="label-sec">tr</b> element</li>
+							<li><b class="label">clear</b> (obsolete) attribute on <b class="label-sec">br</b> element</li>
+							<li><b class="label">compact</b> attribute on <b class="label-sec">dl</b>, <b class="label-sec">dir</b> and <b class="label-sec">menu</b> elements</li>
+							<li><b class="label">type</b>, <b class="label">compact</b> and <b class="label">start</b> (deprecated. use CSS instead.) attributes on <b class="label-sec">ol</b> and <b class="label-sec">ul</b> elements</li>
+							<li><b class="label">type</b> and <b class="label">value</b> attributes on <b class="label-sec">li</b> element</li>
+							<li><b class="label">width</b> attribute on <b class="label-sec">pre</b> element</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h3>specifications</h3>
+					<h4><b class="label-sec">Strict</b></h4>
+					<h4><b class="label-sec">Transitional</b></h4>
+					<h4><b class="label-sec">Frameset</b></h4>
+				</section>
+
+				<section>
+					<h5>Where are the deprecated elements of html4<br> are used now?</h5>
+					<br><pre><code class="hljs">
+<font size="5" color="red" face="Arial">Hello world!</font>
+				</code></pre>
+				</section>
+
+				<section>
+					<h5>Which element was deprecated in HTML4, but reintroduced in HTML5.1?</h5>
+					<div class="fragment" style="float:left;margin:0;width:500px;margin-right:-71px;">
+						<img data-src="img/contextual-menu-sub-menu.png" width="500" class="plain fragment shrink" alt="contextual-menu">
+					</div>
+
+					<div class="fragment" style="float:right;width:530px;margin:0;">
+						<pre style="margin:0;width:100%;"><code class="hljs">
+<menu id="demo-image" type="context">
+  <menu label="Image Rotation">
+     <menuitem>Rotate 90</menuitem>
+     <menuitem>Rotate 180</menuitem>
+     <menuitem>Flip Horizontally</menuitem>
+     <menuitem>Flip Vertically</menuitem>
+  </menu>
+  <hr>
+  <menuitem>View Image</menuitem>
+  <menuitem>Copy Image</menuitem>
+  <menuitem>Copy Image Location</menuitem>
+   ....
+</menu>
+				</code></pre>
+						</div>
+				</section>
+				<!-- /SECTION 2 -->
+
+				<!-- SECTION 3 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>XHTML1</h1>
+				</section>
+
+				<section>
+					<h2>XHTML1<br><small>extensible hypertext markup language</small></h2>
+					<p>In 1998, World Wide Web Consortium began work on the new markup language based on HTML 4 but corresponding syntax XML.
+						Subsequently, a new language called XHTML. The first version of XHTML 1.0 as a Recommendation approved by W3C in January 26, 2000.</p>
+				</section>
+
+				<section>
+					<div style="position: relative; margin:0 auto; width:800px; height:600px; color:#fff;">
+						<div class="fragment" style="background:#39C2D7; top:150px; left:130px; width:300px; height:300px; position:absolute; border-radius:50%;">
+							<h3 style="color:#fff; margin-top:100px; margin-right:40px;">HTML<br><small>1990</small></h3>
+						</div>
+						<div class="fragment" style="background:#A3C644; top:150px; right:130px; width:300px; height:300px; position:absolute; border-radius:50%;">
+							<h3 style="color:#fff; margin-top:100px; margin-left:22px;">XML<br><small>1996</small></h3>
+						</div>
+						<div class="fragment" style="background:#B22746; top:225px; left:325px; width:150px; height:150px; position:absolute; border-radius:50%;">
+							<h4 style="color:#fff; margin-top:38px;">XHTML<br><small>2000</small></h4>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Differences between XHTML and HTML</h3>
+					<p style="text-align:left;">The main difference with HTML and XHTML is processing the document.
+						XHTML documents are processed by its module (parser) similar documents XML.<br>
+						During this processing, the mistakes made by developers, not corrected.
+
+						<small>As a W3C Recommendation browsers encountering an error in XHTML, you must report it and not to process document.
+						For HTML browsers had to try to understand what the author meant;</small>
+					</p>
+					<p style="text-align:left;">
+						Browser selects the parser to process the document based on the header content-type, obtained from the server:<br>
+						HTML — text/html<br>
+						XHTML — application/xhtml+xml
+					</p>
+					<p style="text-align:left;"><small>The default encoding is UTF-8 (as opposed to HTML, which is the default encoding ISO 8859-1).</small></p>
+				</section>
+
+				<section>
+					<h3>Rules of XHTML</h3>
+					<ul style="text-align:left;">
+						<li>All elements must be closed. Tags that don't have a closing tag (e.g. <b class="label-err">&lt;img&gt;</b>
+							or <b class="label-err">&lt;br&gt;</b>), must have at the end / (e.g. <b class="label-sec">&lt;br /&gt;</b>)
+						</li>
+						<li>Logical attributes are written in expanded form. For example, you should write
+							<b class="label-sec">&lt;option selected="selected"&gt;</b> or <b class="label-sec">&lt;td nowrap="nowrap"&gt;</b>
+							instead <b class="label-err">&lt;option selected&gt;</b> or <b class="label-err">&lt;td nowrap&gt;</b>
+						</li>
+						<li>
+							Tag names and attributes must be written in lowercase letters (e.g. <b class="label-sec">&lt;img alt="" /&gt;</b> instead <b class="label-err">&lt;IMG ALT="" /&gt;</b>)
+						</li>
+						<li>
+							XHTML is much stricter refers to errors in the code <b class="label-err">&lt;</b> and <b class="label-err">&amp;</b> everywhere, even in the URL,
+							must be replaced by <b class="label-sec">&amp;lt;</b> and <b class="label-sec">&amp;amp;</b> respectively.
+						</li>
+					</ul>
+				</section>
+				<!-- /SECTION 3 -->
+
+				<!-- SECTION 4 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>&lt;!DOCTYPE&gt;</h1>
+				</section>
+
+				<section>
+					<h2>Doctype (document type declaration)</h2>
+					<p>A document type declaration, or DOCTYPE, is an instruction that associates a particular SGML or XML document
+						(for example, a webpage) with a document type definition (DTD) (for example, the formal definition of a particular version of HTML)</p>
+				</section>
+
+				<section>
+					<h3>Syntax</h3>
+					<pre class="pre_large"><code>
+&lt;!DOCTYPE [Top level element] [Publicity] "[Registration]//[Organization]//[Type] [Name]//[Lang]" "[URL]"&gt;
+					</code></pre>
+					<ul style="font-size:.8em;">
+						<li><b class="label-sec">Top level element</b> — It indicates the top-level element in a document to HTML, this tag &lt;html&gt;.</li>
+						<li><b class="label-sec">Publicity</b> — PUBLIC or SYSTEM</li>
+						<li><b class="label-sec">Registration</b> — Developer DTD registered with the International Organization for Standardization.
+							It takes one of two values: plus - a developer registered in the ISO, and minus - the developer is not registered. The W3C value put "-".
+						<li><b class="label-sec">Organization</b> — unique name of the organization that developed the DTD</li>
+						<li><b class="label-sec">Type</b> — type describes the document. For HTML value specified DTD.</li>
+						<li><b class="label-sec">Name</b> — unique name to describe the document DTD.</li>
+						<li><b class="label-sec">Lang</b> — the language in which the text is written to describe the object</li>
+						<li><b class="label-sec">URL</b> — address of the document with DTD.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>List of Doctype</h2>
+
+					<style>
+						.reveal .hljs-doctype {color:#efef8f;}
+						.reveal .pre_large {margin:10px -10px;width:110%;font-size:0.40em;}
+					</style>
+
+					<pre class="pre_large"><code>
+&lt;!DOCTYPE [Top level element] [Publicity] "[Registration]//[Organization]//[Type] [Name]//[Lang]" "[URL]"&gt;
+
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;
+
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+
+
+&lt;!DOCTYPE html&gt;
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Validation</h3>
+					<img data-src="img/validator.png" height="570" class="plain" alt="validator">
+					<p class="hidden">
+						Валидным (то есть отвечающим всем правилам) XHTML-документом считается документ, удовлетворяющий спецификации.
+						В идеале, все браузеры должны следовать веб-стандартам и, в соответствии с ними,
+						валидные документы должны отображаться во всех браузерах на всех платформах.
+						Валидация XHTML-документа рекомендована даже несмотря на то,
+						что она не гарантирует кросс-браузерности.
+						Соответствие документа спецификации может быть проверено на сайте validator.w3.org.
+						При валидации будут обнаружены ошибки в XHTML-разметке; валидатор разъяснит суть ошибок.
+					</p>
+				</section>
+				<!-- /SECTION 4 -->
+
+				<!-- SECTION 5 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>Industry evolution</h1>
+				</section>
+
+				<section>
+					<div class="timeline">
+						<div class="timeline__row">
+							<div class="timeline__cell" data-title="1998">
+								<div class="timeline__drop" style="top:150px;">
+									<h5>1998</h5>
+									<p>start work on<br> <b class="label-sec">XHTML</b> draft version</p>
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="2000" style="width:23%;">
+								<div class="timeline__drop" style="top:150px;">
+									<h5>2000</h5>
+									<p><b class="label-sec">XHTML</b> was<br> published as<br> a W3C Recom.</p>
+								</div>
+							</div>
+							<div class="timeline__cell" style="width:25%;">
+								<div class="fragment timeline__drop" style="top:170px;">
+									<h1 class="fragment fade-out" style="position:absolute;">???</h1>
+									<h3 class="fragment" style="margin-top:10px;">XHMTL 2 <small>draft</small></h3>
+									<h3 class="fragment">HMTL 5 <small>draft</small></h3>
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="2014">
+								<div class="timeline__drop" style="top:150px;">
+									<h5>2014</h5>
+									<p><b class="label-sec">HTML5</b> was<br> published as<br> a W3C Recom.</p>
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="2016">
+								<div class="timeline__drop" style="top:150px;">
+									<h5>2016</h5>
+									<p><b class="label-sec">HTML5.1</b> was<br> published as<br> a W3C Recom.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p class="hidden">
+						Историю развития языка HTML можно сравнить с детективным рассказом в том, что в ней есть свой неожиданный поворот событий,
+						в результате которых появилась новая версия языка — HTML5.
+						В 1998 Свои надежды на будущее консорциум W3C возлагал на модернизированного наследника HTML — язык XHTML. Но язык HTML не умер.
+						Его "подобрала" группа программистов-аутсайдеров и не только возвратила его к жизни, но и заложила основу для новых возможностей, которые мы с вами и исследуем.
+					</p>
+				</section>
+
+				<section>
+					<h2>Problems XHTML1</h2>
+					<p>Although browsers understand markup XHTML, they did not provide a rigorous test of derogations from the rules required by this standard.
+						This means that the page can be set up in violation of the rules of XHTML, but browsers do not blink an eye when it is processed.</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>XHTML2</h2>
+						<p>This issue should, in theory, be solved in the next version - XHTML 2.
+							It had to tighten the rules for error handling, which would be forced browsers don't handle the pages that do not correspond to valid XHTML 2.
+							In XHTML 2 also got rid of many strange and agreements inherited from HTML.</p>
+					</section>
+					<section>
+						<h4>typical changes for XHTML2</h4>
+						<ul>
+							<li>The numbering system header (<b class="label-err">&lt;h1&gt;</b>, <b class="label-err">&lt;h2&gt;</b>,, <b class="label-err">&lt;h3&gt;</b>, etc.)
+						has been replaced by a single element <b class="label-sec">&lt;h&gt;</b>, with the level it designates the title, depending on the location of the element in a web page.
+							</li>
+							<li>
+								The element <b class="label-err">&lt;a&gt;</b>, has been replaced by the possibility of allowing web developers to convert any element in the link
+							</li>
+							<li>
+								Of XHTML 2 was removed a few handy items that are still popular among web developers,
+								such as <b class="label-err">&lt;b&gt;</b> (bold text), <b class="label-err">&lt;i&gt;</b> (italic text) and <b class="label-err">&lt;iframe&gt;</b> (to attach a web page to another).
+							</li>
+						</ul>
+						<p class="hidden">
+							Changes of this kind are typical for XHTML 2
+
+							С теоретической точки зрения, они делали язык более аккуратным и были более понятными.
+							Но с практической стороны, они вынуждали всех изменить свой подход к созданию веб-страниц (не говоря об обновлении уже созданных веб-страниц),
+							не добавляя при этом никакой новой функциональности, чтобы оправдать всю эту работу.
+
+							Но, возможно, худшей проблемой оказалась чрезвычайно медленная скорость внесения изменений.
+							Разработка XHTML 2 тащилась в течение пяти лет, и интерес разработчиков к этому стандарту медленно угасал.
+
+							обратная совместимость
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What happened while HTML sleeping?</h2>
+						<p> While HTML was sleeping, related technologies (mainly, CSS, and JavaScript) were sleeping or nap too<br>
+							Internet continues to evolve, demanding new features and find ways of their implementation.</p>
+						<p>Within standard HTML 4 and had not yet been finally adopted CSS 2.1
+						and the previous standard JavaScript - ECMAScript 3,
+						armed power plug-ins (primarily, Flash, and later, Silverlight),
+						Web developers have made a revolution on the Internet:</p>
+					</section>
+					<section>
+						<h4>Revolution on the Internet</h4>
+						<ul>
+							<li>Rich Internet Applications (RIA) and general Web applications that run entirely in the web browser</li>
+							<li>Asynchronous communication (AJAX)</li>
+							<li>Web 2.0, social networks</li>
+							<li>Online video and audio in the browser, live streaming</li>
+							<li>Communication via webcam and microphone directly in your browser</li>
+							<li>Features such as geolocation</li>
+							<li>Increase in popularity of Javascript</li>
+							<li><small>also update the power of computer technology</small></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2><small>Web Hypertext Application Technology Working Group</small> WHATWG and HTML 5</h2>
+					<p>Created by Opera Software, Mozilla Foundation and Apple</p>
+					<p class="hidden">
+						Приблизительно в то же самое время (начиная с 2004 г.) группа разработчиков начала рассматривать будущее Всемирной паутины в другом ракурсе.
+						Вместо того чтобы попытаться разобраться, что было неправильным (или просто "грязным" с философической точки зрения) в HTML,
+						они сфокусировались на том, чего в нем не хватало, что хотели бы иметь веб-разработчики для воплощения своих идей.
+						В конце концов, HTML зародился как инструмент для отображения документов.
+						С добавлением языка сценариев JavaScript, HTML преобразовался в систему для разработки веб-приложений,
+						таких как поисковые движки, онлайновые магазины, картографические инструменты, средства чтения электронной почты и многие другие.
+						Но в то время как искусное веб-приложение может делать много чего впечатляющего, создать такое приложение — задача не из легких.
+						Большинство разработчиков использует для этого мешанину кода JavaScript,
+						один или несколько популярных инструментариев JavaScript, а также веб-приложение, исполняемое на веб-сервере.
+						Добиться правильного и единообразного взаимодействия всех этих составляющих на разных браузерах — сложная задача.
+						Такая ситуация вызывала особенную озабоченность среди разработчиков браузеров,
+						поэтому группа дальновидных разработчиков из компании Opera Software (создатели браузера Opera) и компании Mozilla Foundation (создатели браузера Firefox)
+						начали агитировать за включение в XHTML больше возможностей, ориентированных на разработчиков.
+						Когда их попытки не увенчались успехом,
+						компании Opera, Mozilla и Apple создали группу WHATWG (Web Hypertext Appliccation Technology Working Group - рабочая группа по технологии гипертекстовых веб-приложений) с целью работы над новыми решениями.
+						Группа не ставила перед собой задачу заменить HTML, ее целью было плавное расширение языка, и причем такое, чтобы расширения были обратно совместимыми.
+						Надо сказать, что самая ранняя версия работы этой группы включала две спецификации расширений — Web Applications 1.0 и Web Forms 2.0.
+						В конечном итоге эти стандарты эволюционировали в HTML5.
+						Предполагается, что число 5 в названии HTML5 означает: данный стандарт является продолжением стандарта HTML (последней версией стандарта HTML перед XHTML была версия 4.01).
+						Это, конечно же, не совсем верно, т. к. HTML5 поддерживает все разработки, существовавшие в области создания веб-страниц в течение десяти лет после выпуска HTML 4.01, включая строгий синтаксис в стиле XHTML (если разработчики желают использовать его), а также множество инноваций для JavaScript.
+						Тем не менее это название делает ясным следующее: язык HTML5 может поддерживать соглашения XHTML, но требует следования правилам HTML.
+						В 2000-х все интересное происходило в лагере группы WHATWG. После некоторого периода болезненных размышлений организация W3C решила распустить работающую над XHTML 2 группу и работать вместо этого над формализацией стандарта HTML5. На этом этапе первоначальный стандарт HTML5 был разделен на более управляемые части, и многие из его функциональных возможностей стали отдельными стандартами.
+						Что входит </p>
+					<p class="hidden">Сообществом WHATWG, начиная с 2004 года,
+						разрабатывается спецификация Web Applications 1.0, часто неофициально называемая «HTML 5»,
+						которая расширяет HTML (впрочем, имея и совместимый с XHTML 1.0 XML-синтаксис) для лучшего представления семантики различных типичных страниц,
+						например форумов, сайтов аукционов, поисковых систем, онлайн-магазинов и т. д., которые не очень удачно вписываются в модель XHTML 2.0.</p>
+				</section>
+				<!-- /SECTION 5 -->
+
+				<section data-background="img/enough_for_today.gif" data-background-color="#250F0D" data-background-size="contain">
+				</section>
+
+				<!-- SECTION 6 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>HTML5</h1>
+				</section>
+
+				<section>
+					<h3>the cornerstone</h3>
+					<h4>for modern Web applications</h4>
+					<img width="480" height="305" class="plain" data-src="img/html4-html5.png" alt="html4-html5">
+
+					<p class="hidden">18 января 2011 года W3C ввёл логотип, чтобы представить использование или добавить интерес к HTML5.
+						В отличие от других знаков, выпущенных ранее компанией W3C, он не подразумевает соответствие определённому стандарту.
+						С 1 апреля 2011 года этот логотип считается официальным.
+						Во время первого показа его публике, W3C объявил логотип HTML5 как символ «универсальной визуальной идентификации данных для широкого набора открытых Веб-технологий,
+						включая HTML, CSS, SVG, WOFF и другие».
+						Некоторые защитники веб-стандартов, включая и The Web Standards Project, раскритиковали это определение HTML5 как обобщённое и размытое понятие.
+						Тремя днями позже W3C ответил на отзыв сообщества и изменил определение логотипа, убрав перечисление связанных технологий.
+						Затем W3C заявил, что логотип «представляет HTML5, краеугольный камень для современных Веб приложений</p>
+				</section>
+
+				<section>
+					<div style="position:relative;padding-right:50px;">
+						<h4>Semantics</h4>
+						<h4>Multimedia</h4>
+						<h4>Graphics</h4>
+						<h4>Web Forms</h4>
+						<h4>JavaScript APIs</h4>
+
+						<img height="320" class="plain" data-src="img/html5-waths-new.png" alt="html5" style="position:absolute;top:50%;left:68%;margin:-150px 0 0;">
+					</div>
+
+					<p class="hidden">
+						Принципиально, ключевые изменения можно разделить на 5 блоков:
+
+						Семантика.
+						В HTML5 появился ряд новых семантических тегов, позволяющих более осмысленно организовывать внутреннюю структуру веб-страниц.
+						Это включает как блочные теги вроде header, footer, article,
+						так и теги для разметки текста, например, mark, ruby, details.
+						Ряд существующих тегов HTML4 признан устаревшим, отдельные теги поменяли свое значение, определенные изменения претерпели атрибуты.
+
+						Мультимедиа.
+						HTML5 добавляет нативную поддержку мультимедийного контента (аудио и видео) прямо в HMTL-разметке — с соответствующим API
+						для управления воспроизведением (и некоторыми заморочками с кодеками).
+
+						Графика.
+						Работать с графикой на стороне клиента стало заметно проще.
+						В HTML5 добавлен элемент canvas и специальный API на JavaScript для работы с ним.
+						Canvas представляет собой динамическую «поверхность», поверх которой можно программного рисовать.
+						Также в HTML5 официально включен тег svg, позволяющий внедрять векторную графику,
+						описываемую соответствующим веб-стандартом (SVG, Scalable Vector Graphics).
+
+						Веб-формы.
+						Новые элементы веб-формы: как типы, так и атрибуты,
+						позволяющие расширить возможности традиционных форм встроенными средствами без использования
+						дополнительных библиотек — от подсказок в поле ввода (placeholder)
+						и проверки вводимых значений до специальных элементов для ввода дат и цвета.
+
+						JavaScript APIs.
+						Как обозначенные выше API для работы с графикой и мульмедиа,
+						так новые возможности по перемещению объектов (Drag & Drop) и работе с историей переходов (History API),
+						а также ряд мелочей, вроде возможности сделать контент редактируемым прямо в текущем месте с помощью Content Editable атрибутов.
+					</p>
+
+				</section>
+
+				<section>
+					<h3>umbrella term</h3>
+					<img height="400" class="plain" data-src="img/html5.jpg" alt="html5">
+				</section>
+
+				<section>
+					<h3>HTML5 Extended <small>or</small> HTML5+</h3>
+					<img width="472" height="500" class="plain" data-src="img/html5+.png" alt="html5">
+				</section>
+
+				<section>
+					<section>
+						<h2>New Elements</h2>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td><b class="label-sec">section</b></td>
+								<td><small>Represents a generic document or application section</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">article</b></td>
+								<td><small>Represents an independent piece of content of a document, such as a blog entry or newspaper article</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">aside</b></td>
+								<td><small>Represents a piece of content that is only slightly related to the rest of the page</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">header</b></td>
+								<td><small>Represents a group of introductory or navigational aids</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">footer</b></td>
+								<td><small>Represents a footer for a section and can contain information about the author, copyright information, etc</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">nav</b></td>
+								<td><small>Represents a section of the document intended for navigation</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">figure</b></td>
+								<td><small>Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document</small></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td><b class="label-sec">canvas</b></td>
+								<td><small>This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games</small></td>
+							</tr>
+							<tr>
+								<td style="line-height: 1;"><b class="label-sec">audio</b> / <b class="label-sec">video</b></td>
+								<td><small>Defines an audio / video file</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">embed</b></td>
+								<td><small>Defines external interactive content or plugin</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">meter</b></td>
+								<td><small>Represents a measurement, such as disk usage</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">time</b></td>
+								<td><small>Represents a date and/or time</small></td>
+							</tr>
+
+							<tr>
+								<td><b class="label-sec">command</b></td>
+								<td><small>Represents a command the user can invoke</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">details</b></td>
+								<td><small>Represents additional information or controls which the user can obtain on demand</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">progress</b></td>
+								<td><small>Represents a completion of a task, such as downloading or when performing a series of expensive operations</small></td>
+							</tr>
+						</table>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>New types for &lt;input&gt; tag</h2>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td><b class="label-sec">date</b></td>
+								<td><small>Selector for calendar date</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">color</b></td>
+								<td style="line-height:1;"><small style="line-height:1;">Color selector, which could be represented by a wheel or swatch picker</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">email</b></td>
+								<td><small>Input type should be an email</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">number</b></td>
+								<td><small>A field containing a numeric value only</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">range</b></td>
+								<td><small>Numeric selector within a range of values, typically visualized as a slider</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">search</b></td>
+								<td><small>Term to supply to a search engine. For example, the search bar atop a browser</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">tel</b></td>
+								<td><small>Input type should be telephone number</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">time</b></td>
+								<td><small>Time indicator and selector, with no time zone information</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">url</b></td>
+								<td><small>Input type should be URL type</small></td>
+							</tr>
+						</table>
+					</section>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Weakening of rules
+						```
+						<!DOCTYPE HTML>
+						<meta charset="utf-8">
+						<title>Simple HTML5</title>
+						<p>Simple example of HTML5!</p>
+
+						<br />
+						<br>
+						<br/>
+						<Br>
+						<BR>
+
+						<img alt="mandatory" src=myimage.jpg />
+						<img data-src=myimage.jpg>
+
+						<input type="checkbox" checked="checked" />
+						<input type="checkbox" checked>
+						```
+					</script>
+				</section>
+
+				<section>
+					<h3>Compare semantic HTML4 and HTML5</h3>
+
+<pre class="pre_large" style="float:left; width:450px;"><code>&lt;div id=&quot;header&quot;&gt;
+    &lt;h1&gt;Header of Site&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&quot;sidebar&quot;&gt;
+    &lt;h2&gt;Menu&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item #1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item #2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;post&quot;&gt;
+    &lt;h2&gt;Post #1&lt;/h2&gt;
+    &lt;p&gt;description of first post.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;post&quot;&gt;
+    &lt;h2&gt;Post #2&lt;/h2&gt;
+    &lt;p&gt;description of second post.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;footer&quot;&gt;
+    &lt;p&gt;Bottom of Page&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+<pre class="pre_large" style="float:right; width:450px;"><code>&lt;header&gt;
+    &lt;h1&gt;Header of Page&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav&gt;
+    &lt;h2&gt;Menu&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item #1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item #2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;article&gt;
+    &lt;h2&gt;Post #1&lt;/h2&gt;
+    &lt;p&gt;description of first post.&lt;/p&gt;
+&lt;/article&gt;
+&lt;article&gt;
+    &lt;h2&gt;Post #2&lt;/h2&gt;
+    &lt;p&gt;description of second post.&lt;/p&gt;
+&lt;/article&gt;
+&lt;footer&gt;
+    &lt;p&gt;Bottom of Page&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>New APIs</h2>
+					</section>
+					<section>
+						<h3>W3C Technical Report Development Process</h3>
+						<ol>
+							<li>Publication of the First Public Working Draft,</li>
+							<li>Publication of zero or more revised Public Working Drafts.</li>
+							<li>Publication of a Candidate Recommendation.</li>
+							<li>Publication of a Proposed Recommendation.</li>
+							<li>Publication as a W3C Recommendation.</li>
+							<li>Possibly, Publication as an Edited Recommendation</li>
+						</ol>
+						<img height="189" class="plain" data-src="img/w3c-flow.png" alt="w3c-flow">
+					</section>
+					<section>
+						<h3>Standards</h3>
+						<table style="font-size:0.8em;line-height:1.2;">
+							<tr>
+								<td colspan="2">
+									<b class="label-sec">Session history management</b>, <b class="label-sec">Offline web applications</b>,
+									<b class="label-sec">Drag and Drop</b>, <b class="label-sec">Text API for Canvas</b>, <b class="label-sec">WebGL - 3D Canvas graphics</b>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b class="label-sec">Web&nbsp;Notifications</b><br>
+									<small><b>REC</b> 22.10.15</small>
+								</td>
+								<td><small>This API used for displaying simple notifications to the user.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b class="label-sec">HTML5 Web Messaging</b><br>
+									<small><b>REC</b> 18.05.15</small>
+								</td>
+								<td><small>This specification defines mechanisms for communicating between browsing contexts in HTML document.
+									<small>Messages in server-sent events, Web sockets, cross-document messaging, channel messaging, and broadcast channels use the MessageEvent interface</small></small></td>
+							</tr>
+							<tr>
+								<td>
+									<b class="label-sec">Server-Sent Events</b><br>
+									<small><b>REC</b> 02.03.15</small>
+								</td>
+								<td><small>This specification defines an API for opening an HTTP connection for receiving push notifications from a server in the form of DOM events.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b class="label-sec">Geolocation API</b><br>
+									<small><b>REC</b> 24.10.13</small>
+								</td>
+								<td><small>This API is used to provide web applications with scripted access to geographical location information of the hosting device.</small></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<b class="label-sec">Vibration API</b>, <b class="label-sec">Pointer Events</b>,
+									<b class="label-sec">Progress Events</b>, <b class="label-sec">Metadata API</b>,
+									<b class="label-sec">Page Visibility</b>, <b class="label-sec">Widget Interface</b>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>Recommendations</h3>
+						<table style="font-size:0.8em;">
+							<tr>
+								<td>
+									<b class="label-sec">Web storage (Second&nbsp;Edition)</b><br>
+									<small><b>PR</b> 26.11.2015</small>
+								</td>
+								<td><small>This specification defines an API for persistent data storage of key-value pair data in Web clients.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b class="label-sec">Media Source Extensions</b><br>
+									<small><b>CR</b> 12.11.2015</small> n
+								</td>
+								<td><small>This specification extends the HTMLMediaElement interface to allow JavaScript to generate media streams for playback.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b class="label-sec">WebSocket API</b><br>
+									<small><b>CR</b> 20.09.2012</small>
+								</td>
+								<td><small>This specification defines an API that enables Web pages to use the Web Sockets protocol for two-way communication with a remote host.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b class="label-sec">Media&nbsp;Capture&nbsp;API</b><br>
+									<small><b>CR</b> 09.09.2014</small>
+								</td>
+								<td><small>This document defines a set of APIs that allow access to the audio, image and video capture capabilities of the device.</small></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<b class="label-sec">Web Cryptography API</b>, <b class="label-sec">Battery Status API</b>, <b class="label-sec">DeviceOrientation Event</b>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>Draft</h3>
+						<table style="font-size:0.8em;">
+							<tr>
+								<td><b class="label-sec">File API</b></td>
+								<td><small>The File APIs are used by the browser to provide secure access to the file system.</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">HTML Microdata</b></td>
+								<td><small>This API is used to annotate content with specific machine-readable labels, e.g. to allow generic scripts to provide services that are customized to a page.
+									Microdata allows nested groups of name-value pairs to be added to documents.</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">Geolocation&nbsp;API Spec.&nbsp;Level&nbsp;2</b></td>
+								<td><small>This specification adds the ability to retrieve a civic address, rather than coordinates, to the Geolocation API.</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">Web workers</b></td>
+								<td><small>Allows delegation of JavaScript evaluation to background threads, allowing these activities to prevent slowing down interactive events.</small></td>
+							</tr>
+							<tr>
+								<td><b class="label-sec">Clipboard API</b></td>
+								<td><small>This document describes apis for clipboard operations such as copy/cut and paste, or drag and drop in web applications.</small></td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<!-- /SECTION 6 -->
+
+				<!-- SECTION 7 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>HTML5 today</h1>
+				</section>
+
+				<section>
+					<h2>HTML5.1</h2>
+					<p>W3C Recommendation, 1 November 2016</p>
+				</section>
+
+				<section>
+					<h3>What's new?</h3>
+					<ul style="font-size:0.9em">
+						<li><b class="label-sec">table sorting</b></li>
+						<li><b class="label-sec">details</b> and <b class="label-sec">summary</b> element</li>
+						<li><b class="label-sec">dialog</b> element</li>
+						<li><b class="label-sec">picture</b> element and <b class="label-sec">srcset</b> attribute</li>
+						<li><b class="label-sec">menu</b>, <b class="label-sec">menuitem</b>, <b class="label-sec">contextmenu</b> elements</li>
+						<li><b class="label-sec">seamless iframes</b></li>
+						<li><b class="label-sec">scoped style</b></li>
+						<li><b class="label-sec">datetime</b>, <b class="label-sec">datetime-local</b>, <b class="label-sec">week</b>, <b class="label-sec">month</b> input types</li>
+						<li><b class="label-sec">inert</b> attribute</li>
+						<li><b class="label-sec">:dir()</b> pseudoclass</li>
+						<li><b class="label-sec">fullScreen()</b> method</li>
+						<li><b class="label-sec">HTMLFormElement.reportValidity()</b> method</li>
+						<li>new Canvas methods</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Can I use?</h3>
+					<img height="600" class="plain" style="margin:0;" data-src="img/caniuse.png" alt="caniuse">
+				</section>
+				<!-- /SECTION 7 -->
+
+				<!-- SECTION 8 -->
+				<section>
+					<section>
+						<h1>What's next?</h1>
+						<img height="404" class="plain" data-src="img/html-next.png" alt="html-next">
+					</section>
+					<section style="font-size:0.8em;" data-markdown>
+						<script type="text/template">
+							#### New elements of semantics
+
+							<b style="font-size:1.2em;">&lt;decompress&gt;</b><br>
+							<small>
+								This element is proposed for the integration of files from a ZIP-archive (ZIP format as the main, however others are possible too) directly into a web page. Advantages of this approach: web-browser access to files from ZIP, reduction of requirements for bandwidth (which is especially important for mobile
+							</small>
+							```
+							<decompress href="http://example.com/mobile/familyreunion.zip">
+							<a href="familyreunion.zip/html/activities.html">Activities from our family reunion</a>
+							<img src="familyreunion.zip/img/family.jpg">
+							```
+							<br>
+							<b style="font-size:1.2em;">&lt;location&gt;</b><br>
+							<small>
+								This element (similar to &lt;time /&gt;) is used to describe geo-information. It is proposed to use the attributes: lat, long, altitude:
+							</small>
+							```
+							<location lat=27.9 long=-71.3 altitude=-100>The Bermuda Triangle</location>
+							```
+						</script>
+					</section>
+					<section style="font-size:0.62em;" data-markdown>
+						<script type="text/template">
+							<b style="font-size:1.4em;">&lt;teaser&gt;</b><br>
+							<small>
+								The element is designed to wrap the content block having a link to a complete block. Such structures we can see everywhere: in the search results on the first page of the blog, resume block with (or without) media resources and so on. In general, it should be a sectional element that can be located in other sectional elements, such as navigation page:
+							</small>
+							```
+							<nav>
+								<teaser>
+									<header>
+										<h1><a href="http://www.example.com/myFirstPost.html">My First Post</a></h1>
+									</header>
+									<p>This is my first article on the page, and it's really cool.</p>
+									<footer>
+										<time>3 Days Ago</time>
+										<div><a href="http://www.example.com/myFirstPost.html">http://www.example.com/myFirstPost.html</a></div>
+									</footer>
+								</teaser>
+								<teaser>
+									<header>
+										<h1><a href="http://www.example.com/mySecondPost.html">My Second Post</a></h1>
+									</header>
+									<p>This article is on superconducting fields, and is even cooler than my first article.</p>
+									<footer>
+										<time>1 Days Ago</time>
+										<div>
+											<a href="http://www.example.com/mySecondPost.html">http://www.example.com/mySecondPost.html</a>
+										</div>
+									</footer>
+								</teaser>
+							</nav>
+							```
+						</script>
+					</section>
+					<section>
+						<h4>Forms</h4>
+						<ul>
+							<li>Automatic writing in input-forms with capital letters</li>
+							<li>Localization of controls
+								<small style="display:block;">(Web developers often have a lack of ability to localize the controls, such as: the button «Browse» to fields &lt;input type=’file’ /&gt;, controls for setting the date/time)</small>
+							</li>
+						</ul>
+						<br><br>
+						<h4>Multimedia</h4>
+						<ul style="width: 100%;">
+							<li>Audio balance
+								<small style="display:block;">Adjusting audio balance (right / left channel) with HTML5 for stereo tracks.</small>
+							</li>
+							<li>Improving video playback
+								<small style="display:block;">fast / slow motion / fast forwarding and previous / next frame</small>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Text editing</h4>
+						<ul style="width: 100%;">
+							<li>Element &lt;editоr&gt;
+								<small style="display:block;">This element allows to save the typed text.</small>
+							</li>
+							<li>&lt;textarea type=”wysiwyg”&gt;
+								<small style="display:block;">The main objective: WYSIWYG-editor for structured (semantic) text. Intended use: blogs, emails, editing articles of CMS sites, and so on. Estimated list of supported elements:
+								<br>- blocks: p, ul/li, ol/li, dl/dt/dd, blockquote, pre
+								<br>- spans: strong/em/a/sup/sub/u/code/strike
+								<br>- inline-blocks: img, br
+								<br>- tables: table/tr/th/td
+								</small>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>HTML5.2</h2>
+					<p>W3C Working Draft, 28 February 2017</p>
+				</section>
+
+				<section style="text-align: left;">
+					<h3>Useful links</h3>
+					<ul>
+						<li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+						<li><a href="http://frontender.info/">Frontender</a></li>
+						<li><a href="https://www.w3.org/blog/news/">W3C news</a></li>
+						<li><a href="http://habrahabr.ru/search/?q=%D0%94%D0%B0%D0%B9%D0%B4%D0%B6%D0%B5%D1%81%D1%82+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D1%8B%D1%85+%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%BE%D0%B2+%D0%B8%D0%B7+%D0%BC%D0%B8%D1%80%D0%B0+%D0%B2%D0%B5%D0%B1-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8+%D0%B8+IT+%D0%B7%D0%B0+%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8E%D1%8E+%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E&target_type=posts&order_by=date">Habrahabr digest</a></li>
+						<li><a href="http://html5weekly.com/">HTML5 Weekly</a></li>
+						<li><a href="http://css-tricks.com/">CSS Tricks</a></li>
+					</ul>
+				</section>
+				<!-- /SECTION 8 -->
+
+				<!-- SECTION 9 -->
+				<section style="text-align: left;">
+					<h3>Important thing is not to remember,<br> but to be able to find the information</h3>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<h2>any questions?</h2>
+				</section>
+				<!-- /SECTION 9 -->
+
+			</div>
+			<!-- /SLIDES -->
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
